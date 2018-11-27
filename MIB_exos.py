@@ -1,3 +1,4 @@
+
 class Responsable:
         def __init__(self, NoAllee, Nom):
                 self.NoAllee = NoAllee
@@ -57,6 +58,8 @@ print(" Le numéro de cabine, le nom du l'alien et le nom du gardien sont: ",tri
 ##Question 4
 couple = { (Alien.Nom, Responsable.NoAllee ) for Alien in BaseAliens for Responsable in BaseResponsables }
 print( " Le nom de l'alien et son allée sont: ", couple )
-##Question 5
+##Question 5, pas réussi
 allee2 = { ( Alien.Nom, Responsable.NoAllee ) for Alien in BaseAliens for Responsable in BaseResponsables }
-print( " Voici tous les aliens dans l'allée 2: ",allee2)
+print( " Voici tous les aliens dans l'allée 2: ", allee2)
+##Question 6 pas réussi
+#Je n'arrive pas à faire la suite
