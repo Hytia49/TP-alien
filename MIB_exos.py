@@ -58,8 +58,10 @@ print(" Le numéro de cabine, le nom du l'alien et le nom du gardien sont: ",tri
 ##Question 4
 couple = { (Alien.Nom, Responsable.NoAllee ) for Alien in BaseAliens for Responsable in BaseResponsables }
 print( " Le nom de l'alien et son allée sont: ", couple )
-##Question 5, pas réussi
-allee2 = { ( Alien.Nom, Responsable.NoAllee ) for Alien in BaseAliens for Responsable in BaseResponsables }
+##Question 5
+allee2 = { ( Alien.Nom, Responsable.NoAllee ) for Alien in BaseAliens for Responsable in BaseResponsables if ( int(Responsable.NoAllee)==2)}
 print( " Voici tous les aliens dans l'allée 2: ", allee2)
-##Question 6 pas réussi
-#Je n'arrive pas à faire la suite
+##Question 6
+alienplanete2 = { ( Alien.Planete ) for Alien in BaseAliens for Responsable in BaseResponsables if ( int(Responsable.NoAllee)==2)}
+print( " Voici tous les aliens dans l'allée 2: ", alienplanete2)
+##Question 7
